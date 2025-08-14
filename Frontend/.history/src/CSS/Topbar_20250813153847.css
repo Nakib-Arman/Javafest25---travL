@@ -1,0 +1,48 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  background-color: white;
+  padding: 0 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 18px;
+  cursor: pointer;
+  margin-right: 15px; /* space between hamburger and logo */
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background-color: black;
+  border-radius: 2px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-buttons button {
+  padding: 8px 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-buttons button:hover {
+  background: #f0f0f0;
+}

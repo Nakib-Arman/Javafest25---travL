@@ -1,0 +1,13 @@
+import React from 'react';
+import './BackgroundPage.css'; // Import the CSS file
+
+export default function BackgroundPage() {
+  return (
+    <div className="background-container">
+      <div className="content">
+        <h1>Welcome to My Page</h1>
+        <p>This page has a beautiful background image.</p>
+      </div>
+    </div>
+  );
+}

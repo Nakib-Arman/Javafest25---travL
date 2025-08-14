@@ -1,0 +1,38 @@
+/* Make sure the container fills the whole viewport */
+.background-container {
+    height: 100vh;
+    width: 100vw;
+    
+    /* Background image */
+    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1470&q=80');
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    /* Optional: overlay to darken the image for readability */
+    position: relative;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  /* Optional overlay to darken the image */
+  .background-container::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+  }
+  
+  /* Content on top */
+  .content {
+    position: relative;
+    z-index: 2;
+    max-width: 600px;
+    padding: 20px;
+  }
+  

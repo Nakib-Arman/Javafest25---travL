@@ -1,0 +1,50 @@
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: #e1fade;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  /* Logo */
+  .logo-link {
+    display: inline-block;
+    height: 120px;   /* make bigger if needed */
+    width: 200px;
+    background-image: url('../assets/Logo1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  /* Navigation buttons container */
+  .nav-buttons {
+    display: flex;
+    gap: 12px;
+  }
+  
+  /* Button styling */
+  .nav-buttons button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .nav-buttons button:hover {
+    background-color: #354434;
+    color: white;
+  }
+  

@@ -1,0 +1,99 @@
+.form-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px 30px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    font-family: Arial, sans-serif;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #222;
+  }
+  
+  .form-container h3 {
+    margin-top: 25px;
+    margin-bottom: 10px;
+    color: #444;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+  }
+  
+  .meeting-row, .free-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .meeting-row input,
+  .free-row input {
+    flex: 1;
+    min-width: 120px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 0.95rem;
+  }
+  
+  button[type="button"] {
+    background: #f3f3f3;
+    color: #333;
+    padding: 6px 14px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="button"]:hover {
+    background: #e4e4e4;
+  }
+  
+  label {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 0.95rem;
+    cursor: pointer;
+  }
+  
+  label input {
+    margin-right: 6px;
+  }
+  
+  button[type="submit"] {
+    margin-top: 20px;
+    width: 100%;
+    background: #2d89ef;
+    color: white;
+    padding: 12px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background: #1c6cd3;
+  }
+  
+  /* Mobile-friendly adjustments */
+  @media (max-width: 600px) {
+    .meeting-row, .free-row {
+      flex-direction: column;
+    }
+  
+    .meeting-row input,
+    .free-row input {
+      width: 100%;
+    }
+  }
+  

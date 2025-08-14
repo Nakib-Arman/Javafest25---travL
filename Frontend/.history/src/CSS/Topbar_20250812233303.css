@@ -1,0 +1,48 @@
+/* src/CSS/Topbar.css */
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    z-index: 1000;
+  }
+  
+  /* Logo link area with PNG background */
+  .logo-link {
+    display: inline-block;
+    height: 80px; /* logo height */
+    width: 150px; /* adjust to match your logo’s aspect ratio */
+    background-image: url('../assets/Logo1.png'); /* path relative to CSS file */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-decoration: none;
+  }
+  
+  /* nav links */
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .nav-links li a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,51 @@
+.home-container {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Container for the slideshow images */
+  .slideshow-container {
+    position: relative;
+    margin-top: 70px;   /* same height as topbar */
+    margin-left: 180px; /* same width as sidebar */
+    width: calc(100% - 180px);
+    height: calc(100vh - 70px);
+    overflow: hidden;
+    background-color: black; /* in case images don't fill instantly */
+  }
+  
+  /* The image track */
+  .slide-track {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    height: 60%;
+  }
+  
+  /* Each individual image */
+  .slide-image {
+    min-width: 100%;
+    height: 60%;
+    object-fit: cover;
+  }
+  
+  /* Text overlay */
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    z-index: 2;
+  }
+  
+  .overlay-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .overlay-text p {
+    font-size: 1.3rem;
+  }
+  

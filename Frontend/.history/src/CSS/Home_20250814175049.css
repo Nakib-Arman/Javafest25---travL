@@ -1,0 +1,157 @@
+/* basic container */
+.home-container {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    color: black;
+}
+
+
+/* sliding image */
+.slideshow-container {
+    position: relative;
+    margin-top: 100px;
+    margin-left: 0px;
+    width: 100%;
+    height: calc(100% - 250px);
+    overflow: hidden;
+    background-color: black;
+    z-index: 2;
+}
+
+.slide-track {
+    display: flex;
+    transition: transform 0.8s ease-in-out;
+    height: 100%;
+}
+
+.slide-image {
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+
+/* text on the sliding image */
+.overlay-text {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    transform: none;
+    text-align: left;
+    color: white;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+.overlay-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.overlay-text p {
+    font-size: 1.3rem;
+}
+
+
+/* signup and login button */
+.overlay-buttons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+
+.btn {
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    width: 200px;
+    opacity: 0.8;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.signup-btn {
+    background-color: #e6e2e2dc;
+    color: black;
+}
+
+.signup-btn:hover {
+    background-color: #e9ebe9;
+    color: black;
+    transform: scale(1.05);
+}
+
+.login-btn {
+    background-color: #e6e2e2dc;
+    color: black;
+}
+
+.login-btn:hover {
+    background-color: #e9ebe9;
+    transform: scale(1.05);
+}
+
+
+
+.review-slideshow {
+    margin-top: 25px;
+    overflow: hidden;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .review-track {
+    display: flex;
+    transition: transform 0.6s ease-in-out;
+    gap: 15px; /* spacing between cards */
+  }
+  
+  .review-card {
+    background: rgba(243, 252, 193, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(10, 1, 1, 0.1);
+    flex: 0 0 calc((100% / 3) - 10px);
+    box-sizing: border-box;
+    min-height: 200px;
+  }
+
+
+  .review-section {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .review-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .review-line {
+    height: 2px;              /* thin line */
+    width: 100%;
+    background: #ddd;          /* base color */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2); /* subtle shadow */
+    margin: 5px 0;            /* spacing from cards */
+  }
+  
+  .top-line {
+    margin-bottom: 10px; /* space between line and cards */
+  }
+  
+  .bottom-line {
+    margin-top: 10px;    /* space between cards and line */
+  }
+  
+  

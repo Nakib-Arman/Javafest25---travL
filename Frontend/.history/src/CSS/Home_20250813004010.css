@@ -1,0 +1,45 @@
+.home-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+/* Background wrapper holds the bg image and overlay */
+.background-wrapper {
+  position: fixed; /* fixed so it stays behind everything */
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+  background-image: url('../assets/background2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* overlay on background only */
+.background-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(241, 255, 238, 0.7); /* your translucent overlay */
+  pointer-events: none;
+}
+
+/* Navbars and slideshow above background */
+.topbar, .sidebar, .slideshow-container, .overlay-text {
+  position: relative;
+  z-index: 1; /* higher than background */
+}
+
+/* slideshow-container remains same, just make sure it has margin */
+.slideshow-container {
+  margin-top: 70px;
+  margin-left: 180px;
+  width: calc(100% - 180px);
+  height: 60vh;
+  overflow: hidden;
+  background-color: transparent; /* no black fallback now */
+}
