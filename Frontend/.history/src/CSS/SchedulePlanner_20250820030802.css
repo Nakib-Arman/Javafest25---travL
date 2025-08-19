@@ -1,0 +1,92 @@
+.schedule-planner {
+    display: flex;
+    height: 100vh; /* full screen layout */
+    font-family: Arial, sans-serif;
+  }
+  
+/* Sidebar */
+.preferences-sidebar {
+    width: 260px;
+    background-color: #e1fade;
+    padding: 20px;
+    backdrop-filter: blur(6px); /* adds nice glassy effect if background image exists */
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.15); /* shadow instead of border */
+  }
+  
+  
+  .sidebar-title {
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .preference-btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: transparent;
+    font-size: 1rem;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .preference-btn:hover {
+    background-color: #354434;
+    color: white;
+    transform: translateX(3px);
+  }
+  
+  .preference-btn.active {
+    background-color: #dffa7f;
+    color: white;
+    font-weight: bold;
+  }
+  
+  /* Results Section */
+  .results-section {
+    flex: 1;
+    padding: 30px;
+    overflow-y: auto;
+    /* removed background so it inherits from index.css */
+  }
+  
+  .results-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #222;
+  }
+  
+  .results-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .result-card {
+    background-color: rgba(255, 255, 255, 0.9); /* semi-transparent to blend with background */
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.08);
+    transition: transform 0.2s;
+  }
+  
+  .result-card:hover {
+    transform: scale(1.02);
+  }
+  
+  .result-card h3 {
+    margin-bottom: 10px;
+    color: #2d89ef;
+  }
+  
+  .result-card p {
+    font-size: 0.95rem;
+    color: #555;
+  }
+  
