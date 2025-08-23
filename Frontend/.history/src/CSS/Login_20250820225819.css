@@ -1,0 +1,136 @@
+.auth-compact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  
+    /* Background photo */
+    background: url("https://images.unsplash.com/photo-1502920917128-1aa500764b8a")
+      no-repeat center center/cover;
+    
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  /* Semi-transparent overlay to improve text contrast */
+  .auth-compact::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    z-index: 0;
+  }
+  
+  .auth-box {
+    position: relative;
+    display: flex;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+    overflow: hidden;
+    width: 850px;
+    max-width: 95%;
+    z-index: 1;
+  }
+  
+  /* Left: Form */
+  .auth-form {
+    flex: 1;
+    padding: 40px;
+  }
+  
+  .auth-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .form-group {
+    margin-bottom: 18px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 6px;
+    color: #444;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+  
+  .auth-submit {
+    width: 100%;
+    background: #2d89ef;
+    color: white;
+    padding: 12px;
+    font-size: 1.05rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .auth-submit:hover {
+    background: #1c6cd3;
+  }
+  
+  .switch-text {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .switch-text span {
+    color: #2d89ef;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  /* Right: Illustration */
+  .auth-side {
+    flex: 0.7;
+    background: #f0f6ff;
+    padding: 40px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .auth-side img {
+    width: 120px;
+    margin: 0 auto 20px;
+  }
+  
+  .auth-side h3 {
+    font-size: 1.4rem;
+    color: #2d89ef;
+    margin-bottom: 10px;
+  }
+  
+  .auth-side p {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .auth-box {
+      flex-direction: column;
+      width: 95%;
+    }
+  
+    .auth-side {
+      order: -1;
+      padding: 20px;
+    }
+  }
+  
